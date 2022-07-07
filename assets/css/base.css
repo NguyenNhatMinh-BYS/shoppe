@@ -1,0 +1,151 @@
+:root {
+    --white-color: #fff;
+    --black-color: #000;
+    --text-color:#333;
+    --orage-color:#ee4d2d;
+}
+*{
+    box-sizing: inherit;
+}
+html {
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+.grid {
+    width: 1350px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+.grid__full-width{
+    width:100%;
+    
+}
+.grid__row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -12px;
+    margin-right: -12px;
+    
+}
+.grid_column-2{
+    padding-left:  12px;
+    padding-right:  12px;
+    width: 16.66666667%;
+}
+.grid_column-10{
+    padding-left:  12px;
+    padding-right:  12px;
+    width: 83.33334%;
+}
+.font-weight{
+    font-weight: 600;
+}
+@keyframes Qrcode{
+    from{
+        opacity: 0%;
+    }
+    to{
+        opacity: 100%;
+    }
+}
+.modal{
+    display: none;
+    position: fixed;
+    left: 0;
+    top:0;
+    bottom: 0;
+    right: 0;
+}
+.modal__overlay{
+    
+position:absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    
+}
+.modal__body{
+    border-radius: 5px;
+    position: relative;
+    background-color: white;
+    animation: zoom ease-in 0.2s;
+    margin: auto;
+}
+@keyframes zoom {
+    from{
+        opacity: 0;
+        transform: scale(0);
+    }
+    to{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+.moder__inner-img{
+    background-color: rgba(0, 0, 0, 0.4);
+    height: 250px;
+   
+
+}
+.modal__body-bg{
+    display: block;
+    border: 2px solid #61e6f8;
+    border-radius: 5px;
+    
+}
+
+.product{
+    color: #6ab0b9;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+   
+}
+.product:hover{
+   color: rgba(250, 119, 62, 0.842);
+}
+.test{
+    cursor: default;
+    margin-left:  20px;
+    display: inline;
+    line-height: 35px;
+    color:  #6ab0b9 ;
+    font-weight: 400;
+}
+.fa-times-circle{
+    color: #64beca;
+   float: right;
+   font-size: 23px;
+   margin: 6px 8px;
+}
+.fa-times-circle:hover{
+    
+    color: rgba(250, 119, 62, 0.842);
+}
+.modal.open{
+    z-index: 1;
+    display:flex;
+    animation: bysopen ease-in 0.2s;
+}
+@keyframes bysopen{
+    from{
+        opacity: 0;
+        
+    }
+    to{
+        opacity: 1;
+        
+    }
+}
+.modal.close{
+    display: none;
+    
+}
+.font_first{
+    font-size: 18px;
+    font-weight: 600;
+}
