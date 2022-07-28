@@ -368,6 +368,8 @@
     cursor: pointer;
 }
 .header__main-buy{
+    
+    text-decoration: none;
     margin-right: 40px;
     color: white;
     width: 5%;
