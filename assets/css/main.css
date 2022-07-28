@@ -931,9 +931,7 @@
 .connect{
     color: #fff;
 }
-.connect:hover{
-    color: var(--orage-color);
-}
+
 .star_B{
     color: var(--orage-color);
 }
