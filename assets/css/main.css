@@ -933,6 +933,7 @@
 .connect{
     color: #fff;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .star_B{
